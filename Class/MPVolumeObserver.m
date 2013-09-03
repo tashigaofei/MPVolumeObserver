@@ -1,6 +1,5 @@
 
 //  Created by tashigaofei on 13/08/26.
-//  Copyright (c) 2013 baidu. All rights reserved.
 //
 
 #import "MPVolumeObserver.h"
@@ -10,7 +9,7 @@
 {
     UIView *_volumeView;
     float launchVolume;
-    BOOL _isStealingVolumeButtons;
+    BOOL _isObservingVolumeButtons;
     BOOL _suspended;
 }
 @end
@@ -32,11 +31,11 @@
 {
     self = [super init];
     if( self ){
-        _isStealingVolumeButtons = NO;
+        _isObservingVolumeButtons = NO;
         _suspended = NO;
         CGRect frame = CGRectMake(0, -100, 0, 0);
         _volumeView = [[MPVolumeView alloc] initWithFrame:frame];
-        [[UIApplication sharedApplication].keyWindow addSubview:_volumeView];
+        [[UIApplication sharedApplication].windows[0] addSubview:_volumeView];
          
     }
     return self;
@@ -53,11 +52,11 @@
 
 -(void) startObserve;
 {
-    if(_isStealingVolumeButtons) {
+    if(_isObservingVolumeButtons) {
         return;
     }
     
-    _isStealingVolumeButtons = YES;
+    _isObservingVolumeButtons = YES;
     AudioSessionInitialize(NULL, NULL, NULL, NULL);
     SInt32  process = kAudioSessionCategory_AmbientSound;
     AudioSessionSetProperty(kAudioSessionProperty_AudioCategory, sizeof(process), &process);
@@ -73,12 +72,12 @@
     if (!_suspended)
     {
         [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(suspendStealingVolumeButtonEvents:)
+                                                 selector:@selector(suspendObserveVolumeChangeEvents:)
                                                      name:UIApplicationWillResignActiveNotification     // -> Inactive
                                                    object:nil];
         
         [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(resumeStealingVolumeButtonEvents:)
+                                                 selector:@selector(resumeObserveVolumeButtonEvents:)
                                                      name:UIApplicationDidBecomeActiveNotification      // <- Active
                                                    object:nil];
         
@@ -112,14 +111,14 @@
 
 - (void)suspendObserveVolumeChangeEvents:(NSNotification *)notification
 {
-    if(_isStealingVolumeButtons)
+    if(_isObservingVolumeButtons)
     {
         _suspended = YES; // Call first!
         [self stopObserveVolumeChangeEvents];
     }
 }
 
-- (void)resumeStealingVolumeButtonEvents:(NSNotification *)notification
+- (void)resumeObserveVolumeButtonEvents:(NSNotification *)notification
 {
     if(_suspended)
     {
@@ -131,7 +130,7 @@
 -(void)stopObserveVolumeChangeEvents
 {
     
-    if(!_isStealingVolumeButtons){
+    if(!_isObservingVolumeButtons){
         return;
     }
     
@@ -141,7 +140,7 @@
     AudioSessionRemovePropertyListenerWithUserData(kAudioSessionProperty_CurrentHardwareOutputVolume, NULL, self);
     AudioSessionSetActive(NO);
 
-    _isStealingVolumeButtons = NO;
+    _isObservingVolumeButtons = NO;
     
 }
 

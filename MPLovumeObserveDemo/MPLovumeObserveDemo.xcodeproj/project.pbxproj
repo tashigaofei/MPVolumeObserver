@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		819FF5C817D5F01200E5A227 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819FF5C717D5F01200E5A227 /* UIKit.framework */; };
+		819FF5CA17D5F01200E5A227 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819FF5C917D5F01200E5A227 /* Foundation.framework */; };
+		819FF5CC17D5F01200E5A227 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819FF5CB17D5F01200E5A227 /* CoreGraphics.framework */; };
+		819FF5D217D5F01200E5A227 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 819FF5D017D5F01200E5A227 /* InfoPlist.strings */; };
+		819FF5D417D5F01200E5A227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 819FF5D317D5F01200E5A227 /* main.m */; };
+		819FF5D817D5F01200E5A227 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 819FF5D717D5F01200E5A227 /* AppDelegate.m */; };
+		819FF5DA17D5F01200E5A227 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 819FF5D917D5F01200E5A227 /* Default.png */; };
+		819FF5DC17D5F01200E5A227 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 819FF5DB17D5F01200E5A227 /* Default@2x.png */; };
+		819FF5DE17D5F01200E5A227 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 819FF5DD17D5F01200E5A227 /* Default-568h@2x.png */; };
+		819FF5E117D5F01200E5A227 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819FF5E017D5F01200E5A227 /* ViewController.m */; };
+		819FF5F117D5F0A500E5A227 /* MPVolumeObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 819FF5F017D5F0A500E5A227 /* MPVolumeObserver.m */; };
+		819FF5F317D5F0B900E5A227 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819FF5F217D5F0B900E5A227 /* AudioToolbox.framework */; };
+		819FF5F717D5F0DE00E5A227 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819FF5F617D5F0DE00E5A227 /* MediaPlayer.framework */; };
+		819FF5FB17D6046F00E5A227 /* Celestial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819FF5FA17D6046F00E5A227 /* Celestial.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		819FF5C417D5F01200E5A227 /* MPLovumeObserveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPLovumeObserveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		819FF5C717D5F01200E5A227 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		819FF5C917D5F01200E5A227 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		819FF5CB17D5F01200E5A227 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		819FF5CF17D5F01200E5A227 /* MPLovumeObserveDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MPLovumeObserveDemo-Info.plist"; sourceTree = "<group>"; };
+		819FF5D117D5F01200E5A227 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		819FF5D317D5F01200E5A227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		819FF5D517D5F01200E5A227 /* MPLovumeObserveDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MPLovumeObserveDemo-Prefix.pch"; sourceTree = "<group>"; };
+		819FF5D617D5F01200E5A227 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		819FF5D717D5F01200E5A227 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		819FF5D917D5F01200E5A227 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		819FF5DB17D5F01200E5A227 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		819FF5DD17D5F01200E5A227 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		819FF5DF17D5F01200E5A227 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		819FF5E017D5F01200E5A227 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		819FF5EF17D5F0A500E5A227 /* MPVolumeObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPVolumeObserver.h; sourceTree = "<group>"; };
+		819FF5F017D5F0A500E5A227 /* MPVolumeObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPVolumeObserver.m; sourceTree = "<group>"; };
+		819FF5F217D5F0B900E5A227 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		819FF5F617D5F0DE00E5A227 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		819FF5FA17D6046F00E5A227 /* Celestial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Celestial.framework; path = System/Library/PrivateFrameworks/Celestial.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		819FF5C117D5F01200E5A227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				819FF5FB17D6046F00E5A227 /* Celestial.framework in Frameworks */,
+				819FF5F717D5F0DE00E5A227 /* MediaPlayer.framework in Frameworks */,
+				819FF5F317D5F0B900E5A227 /* AudioToolbox.framework in Frameworks */,
+				819FF5C817D5F01200E5A227 /* UIKit.framework in Frameworks */,
+				819FF5CA17D5F01200E5A227 /* Foundation.framework in Frameworks */,
+				819FF5CC17D5F01200E5A227 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		819FF5BB17D5F01200E5A227 = {
+			isa = PBXGroup;
+			children = (
+				819FF5FA17D6046F00E5A227 /* Celestial.framework */,
+				819FF5CD17D5F01200E5A227 /* MPLovumeObserveDemo */,
+				819FF5C617D5F01200E5A227 /* Frameworks */,
+				819FF5C517D5F01200E5A227 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		819FF5C517D5F01200E5A227 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				819FF5C417D5F01200E5A227 /* MPLovumeObserveDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		819FF5C617D5F01200E5A227 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				819FF5F617D5F0DE00E5A227 /* MediaPlayer.framework */,
+				819FF5F217D5F0B900E5A227 /* AudioToolbox.framework */,
+				819FF5C717D5F01200E5A227 /* UIKit.framework */,
+				819FF5C917D5F01200E5A227 /* Foundation.framework */,
+				819FF5CB17D5F01200E5A227 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		819FF5CD17D5F01200E5A227 /* MPLovumeObserveDemo */ = {
+			isa = PBXGroup;
+			children = (
+				819FF5EE17D5F0A500E5A227 /* Class */,
+				819FF5D617D5F01200E5A227 /* AppDelegate.h */,
+				819FF5D717D5F01200E5A227 /* AppDelegate.m */,
+				819FF5DF17D5F01200E5A227 /* ViewController.h */,
+				819FF5E017D5F01200E5A227 /* ViewController.m */,
+				819FF5CE17D5F01200E5A227 /* Supporting Files */,
+			);
+			path = MPLovumeObserveDemo;
+			sourceTree = "<group>";
+		};
+		819FF5CE17D5F01200E5A227 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				819FF5CF17D5F01200E5A227 /* MPLovumeObserveDemo-Info.plist */,
+				819FF5D017D5F01200E5A227 /* InfoPlist.strings */,
+				819FF5D317D5F01200E5A227 /* main.m */,
+				819FF5D517D5F01200E5A227 /* MPLovumeObserveDemo-Prefix.pch */,
+				819FF5D917D5F01200E5A227 /* Default.png */,
+				819FF5DB17D5F01200E5A227 /* Default@2x.png */,
+				819FF5DD17D5F01200E5A227 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		819FF5EE17D5F0A500E5A227 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				819FF5EF17D5F0A500E5A227 /* MPVolumeObserver.h */,
+				819FF5F017D5F0A500E5A227 /* MPVolumeObserver.m */,
+			);
+			name = Class;
+			path = ../../Class;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		819FF5C317D5F01200E5A227 /* MPLovumeObserveDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 819FF5E717D5F01200E5A227 /* Build configuration list for PBXNativeTarget "MPLovumeObserveDemo" */;
+			buildPhases = (
+				819FF5C017D5F01200E5A227 /* Sources */,
+				819FF5C117D5F01200E5A227 /* Frameworks */,
+				819FF5C217D5F01200E5A227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MPLovumeObserveDemo;
+			productName = MPLovumeObserveDemo;
+			productReference = 819FF5C417D5F01200E5A227 /* MPLovumeObserveDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		819FF5BC17D5F01200E5A227 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = baidu;
+			};
+			buildConfigurationList = 819FF5BF17D5F01200E5A227 /* Build configuration list for PBXProject "MPLovumeObserveDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 819FF5BB17D5F01200E5A227;
+			productRefGroup = 819FF5C517D5F01200E5A227 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				819FF5C317D5F01200E5A227 /* MPLovumeObserveDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		819FF5C217D5F01200E5A227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				819FF5D217D5F01200E5A227 /* InfoPlist.strings in Resources */,
+				819FF5DA17D5F01200E5A227 /* Default.png in Resources */,
+				819FF5DC17D5F01200E5A227 /* Default@2x.png in Resources */,
+				819FF5DE17D5F01200E5A227 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		819FF5C017D5F01200E5A227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				819FF5D417D5F01200E5A227 /* main.m in Sources */,
+				819FF5D817D5F01200E5A227 /* AppDelegate.m in Sources */,
+				819FF5E117D5F01200E5A227 /* ViewController.m in Sources */,
+				819FF5F117D5F0A500E5A227 /* MPVolumeObserver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		819FF5D017D5F01200E5A227 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				819FF5D117D5F01200E5A227 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		819FF5E517D5F01200E5A227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		819FF5E617D5F01200E5A227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		819FF5E817D5F01200E5A227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPLovumeObserveDemo/MPLovumeObserveDemo-Prefix.pch";
+				INFOPLIST_FILE = "MPLovumeObserveDemo/MPLovumeObserveDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		819FF5E917D5F01200E5A227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MPLovumeObserveDemo/MPLovumeObserveDemo-Prefix.pch";
+				INFOPLIST_FILE = "MPLovumeObserveDemo/MPLovumeObserveDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		819FF5BF17D5F01200E5A227 /* Build configuration list for PBXProject "MPLovumeObserveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				819FF5E517D5F01200E5A227 /* Debug */,
+				819FF5E617D5F01200E5A227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		819FF5E717D5F01200E5A227 /* Build configuration list for PBXNativeTarget "MPLovumeObserveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				819FF5E817D5F01200E5A227 /* Debug */,
+				819FF5E917D5F01200E5A227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 819FF5BC17D5F01200E5A227 /* Project object */;
+}

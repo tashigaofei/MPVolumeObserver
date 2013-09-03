@@ -1,6 +1,4 @@
 //  Created by tashigaofei on 13/08/26.
-//  Copyright (c) 2013 baidu. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import <AudioToolbox/AudioToolbox.h>
