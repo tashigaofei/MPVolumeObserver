@@ -20,7 +20,6 @@
 		819FF5F117D5F0A500E5A227 /* MPVolumeObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 819FF5F017D5F0A500E5A227 /* MPVolumeObserver.m */; };
 		819FF5F317D5F0B900E5A227 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819FF5F217D5F0B900E5A227 /* AudioToolbox.framework */; };
 		819FF5F717D5F0DE00E5A227 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819FF5F617D5F0DE00E5A227 /* MediaPlayer.framework */; };
-		819FF5FB17D6046F00E5A227 /* Celestial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819FF5FA17D6046F00E5A227 /* Celestial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +42,6 @@
 		819FF5F017D5F0A500E5A227 /* MPVolumeObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPVolumeObserver.m; sourceTree = "<group>"; };
 		819FF5F217D5F0B900E5A227 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		819FF5F617D5F0DE00E5A227 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		819FF5FA17D6046F00E5A227 /* Celestial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Celestial.framework; path = System/Library/PrivateFrameworks/Celestial.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				819FF5FB17D6046F00E5A227 /* Celestial.framework in Frameworks */,
 				819FF5F717D5F0DE00E5A227 /* MediaPlayer.framework in Frameworks */,
 				819FF5F317D5F0B900E5A227 /* AudioToolbox.framework in Frameworks */,
 				819FF5C817D5F01200E5A227 /* UIKit.framework in Frameworks */,
@@ -66,7 +63,6 @@
 		819FF5BB17D5F01200E5A227 = {
 			isa = PBXGroup;
 			children = (
-				819FF5FA17D6046F00E5A227 /* Celestial.framework */,
 				819FF5CD17D5F01200E5A227 /* MPLovumeObserveDemo */,
 				819FF5C617D5F01200E5A227 /* Frameworks */,
 				819FF5C517D5F01200E5A227 /* Products */,
